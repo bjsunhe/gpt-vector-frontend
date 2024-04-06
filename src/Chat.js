@@ -155,7 +155,7 @@ export default  function Chat(){
     return (
         <>
             <div className={styles.flex}>
-                <h2>BOSCH ATMO 涂层系统</h2>
+                <h2>BMG Market Sniffer</h2>
 
                 <form onSubmit={handleSubmit} className={styles.flex}>
                   <textarea
@@ -169,7 +169,7 @@ export default  function Chat(){
                     placeholder={
                       loading
                         ? '等待加载...'
-                        : '请输入问题'
+                        : 'Input your question'
                     }
                     value={query}
                     onChange={(e) => setQuery(e.target.value)}
@@ -179,7 +179,7 @@ export default  function Chat(){
                     type="submit"                    
                     className={styles.button}
                   >
-                    提问
+                    Search
                   </button>
                 </form>
 
