@@ -142,7 +142,7 @@ export default  function Chat(){
         .then(data=>data.json())
         .then(json=>{
                         
-            json.Gpts.forEach(history=>previousHistory.push([history.question,history.response.text]))
+            json.Gpts.forEach(history=>previousHistory.unshift([history.question,history.response.text]))
             setMessageState({
                 ...messageState,
                 history:previousHistory
